@@ -1,0 +1,24 @@
+# Cybersecurity AI Agent - Python Dependencies
+#
+# Install with: pip install -r requirements.txt
+
+# Anthropic Claude SDK - used to call claude-sonnet models
+anthropic>=0.25.0
+
+# ChromaDB - local vector database used to embed and query SKILL.md files
+chromadb>=0.4.24
+
+# sentence-transformers - local embedding model (all-MiniLM-L6-v2), no API key needed
+sentence-transformers>=2.7.0
+
+# python-dotenv - loads ANTHROPIC_API_KEY and other config from .env file
+python-dotenv>=1.0.0
+
+# PyYAML - parses YAML frontmatter in SKILL.md files
+pyyaml>=6.0.1
+
+# Click - builds the CLI interface for the agent
+click>=8.1.7
+
+# Rich - formats terminal output (streaming responses, tables, panels)
+rich>=13.7.0

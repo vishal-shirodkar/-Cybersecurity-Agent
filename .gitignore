@@ -1,0 +1,57 @@
+# ============================================================
+# SecAgentSkills — .gitignore
+# ============================================================
+
+# --- Secrets & credentials (NEVER commit these) ---
+.env
+**/.env
+*.key
+*.pem
+*.p12
+*.pfx
+secrets.json
+credentials.json
+
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# --- Generated databases ---
+data/catalog.db
+data/cache/*
+!data/cache/.gitkeep
+data/upstream/*
+!data/upstream/.gitkeep
+
+# --- ChromaDB vector index (large — rebuild with: python agent.py build-index) ---
+cybersecurity-agent/chroma_db/
+
+# --- Cloned upstream skills repo (users clone this themselves) ---
+cybersecurity-agent/Anthropic-Cybersecurity-Skills/
+
+# --- Generated reports (user-specific output) ---
+cybersecurity-agent/reports/
+
+# --- OS & editor noise ---
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# --- Logs ---
+*.log
+logs/

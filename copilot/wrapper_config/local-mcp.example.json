@@ -1,0 +1,14 @@
+{
+  "name": "security-agent-local",
+  "description": "Example local command transport for the security agent skeleton",
+  "transport": {
+    "type": "command",
+    "command": "python",
+    "args": [
+      "main.py",
+      "serve-mcp",
+      "--skills-root",
+      "data\\upstream\\Anthropic-Cybersecurity-Skills"
+    ]
+  }
+}
