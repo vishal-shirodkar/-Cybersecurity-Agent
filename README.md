@@ -2,6 +2,8 @@
 
 A Claude-powered cybersecurity assistant that routes your security questions to the most relevant expert skill from a database of **754 curated cybersecurity skills**, then streams a grounded, actionable response backed by MITRE ATT&CK, NIST CSF, and D3FEND frameworks.
 
+![Architecture Diagram](docs/architecture.svg)
+
 ---
 
 ## 📋 Table of Contents
